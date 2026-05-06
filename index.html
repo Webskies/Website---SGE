@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title>Safeguard Environments | Private Investment</title>
+    <title>Safeguard Environments | Private Investment & Operations</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Barlow:wght@200;300;400;600&display=swap" rel="stylesheet">
 
     <style>
-        /* --- CSS STYLING --- */
+        /* --- GLOBAL STYLES --- */
         :root {
             --black: #000000;
             --gold: #c9a84c;
@@ -43,7 +43,7 @@
         .logo {
             font-family: 'Cormorant Garamond', serif;
             color: white;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             letter-spacing: 2px;
             text-transform: uppercase;
         }
@@ -53,13 +53,13 @@
             text-decoration: none;
             font-size: 0.7rem;
             letter-spacing: 1px;
-            margin-left: 20px;
+            margin-left: 15px;
             text-transform: uppercase;
         }
 
         /* HERO SECTION */
         .hero {
-            height: 90vh;
+            height: 85vh;
             background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('1000018477.jpg');
             background-size: cover;
             background-position: center;
@@ -86,14 +86,13 @@
         .title-wrapper { text-align: center; margin-bottom: 50px; }
         .underlined-title {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 2.4rem;
+            font-size: 2.2rem;
             display: inline-block;
             border-bottom: 3px solid var(--black);
             padding-bottom: 5px;
             text-transform: capitalize;
         }
 
-        /* GRID SYSTEM */
         .container { max-width: 1200px; margin: 0 auto; padding: 80px 6%; }
         .grid { display: grid; grid-template-columns: 1fr; gap: 40px; align-items: center; }
 
@@ -102,7 +101,20 @@
             .grid-3 { grid-template-columns: 1fr 1fr 1fr; }
         }
 
-        /* CIRCLE ICONS (WHY SAFEGUARD) */
+        /* MEET THE TEAM / ABOUT SECTION */
+        .team-image {
+            width: 100%;
+            max-width: 450px;
+            border: 1px solid var(--gold);
+            padding: 10px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .bio-text p { margin-bottom: 20px; color: var(--text-muted); }
+        .founder-tag { color: var(--gold); font-weight: 600; letter-spacing: 2px; text-transform: uppercase; font-size: 0.8rem; }
+
+        /* CIRCLE ICONS */
         .circle-icon {
             width: 160px; height: 160px;
             border-radius: 50%;
@@ -123,12 +135,12 @@
         .value-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; margin-bottom: 10px; }
 
         /* PROJECT CARDS */
-        .project-card { border: 1px solid #eee; overflow: hidden; background: white; margin-bottom: 40px; }
+        .project-card { border: 1px solid #eee; background: white; margin-bottom: 40px; }
         .project-img { width: 100%; height: auto; display: block; }
         .project-content { padding: 30px; }
 
         /* CRM FORM SECTION */
-        .form-container { background: var(--black); color: white; padding: 60px 6%; }
+        .form-container { background: var(--black); color: white; padding: 80px 6%; }
         input, select, textarea {
             width: 100%; padding: 15px; margin-bottom: 15px;
             background: rgba(255,255,255,0.05); border: 1px solid #333; color: white;
@@ -147,6 +159,7 @@
         <div class="logo">SAFEGUARD<br><span style="color:var(--gold); font-size: 0.7rem;">ENVIRONMENTS</span></div>
         <div class="nav-links">
             <a href="#about">ABOUT</a>
+            <a href="#team">TEAM</a>
             <a href="#projects">PROJECTS</a>
             <a href="#invest">INVEST</a>
         </div>
@@ -158,88 +171,9 @@
     </header>
 
     <section id="about" class="container">
+        <div class="title-wrapper">
+            <h2 class="underlined-title">About Us</h2>
+        </div>
         <div class="grid grid-2">
             <div>
-                <h2 class="underlined-title">About Us</h2>
-                <p style="margin-top: 20px;">Safeguard Environments is an investment and operating firm focused on acquiring and improving small businesses and real estate assets. We prioritize operational discipline and financial transparency.</p>
-            </div>
-            <img src="1000018483.jpg" style="width:100%;" alt="Isaac Weber">
-        </div>
-    </section>
-
-    <section class="container" style="background: var(--light-grey);">
-        <div class="title-wrapper">
-            <h2 class="underlined-title">Why Safeguard?</h2>
-        </div>
-        <div class="grid grid-3" style="text-align: center;">
-            <div>
-                <img src="1000018480.jpg" class="circle-icon">
-                <h3>Operationally Driven</h3>
-                <p>Execution-driven performance, not market speculation.</p>
-            </div>
-            <div>
-                <img src="1000018481.jpg" class="circle-icon">
-                <h3>Value Creation</h3>
-                <p>Improving systems to unlock fundamental value.</p>
-            </div>
-            <div>
-                <img src="1000018487.jpg" class="circle-icon">
-                <h3>Durable Demand</h3>
-                <p>Focusing on assets with sustained, resilient utility.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="container">
-        <div class="value-card">
-            <h3>Transparency</h3>
-            <p>ALWAYS maintaining open and honest communication with investors at every stage.</p>
-        </div>
-        <div class="value-card">
-            <h3>Discipline</h3>
-            <p>Adhering to proven criteria and avoiding decisions driven by market trends.</p>
-        </div>
-        <div class="value-card">
-            <h3>Urgency</h3>
-            <p>Decisive action to capitalize on time-sensitive opportunities.</p>
-        </div>
-    </section>
-
-    <section id="projects" class="container" style="background: var(--light-grey);">
-        <div class="title-wrapper">
-            <h2 class="underlined-title">Past Projects</h2>
-        </div>
-        <div class="project-card">
-            <img src="1000018489.jpg" class="project-img">
-            <div class="project-content">
-                <span style="color:var(--gold); font-size: 0.8rem; font-weight: 600;">SOUTHERN WI | MULTIFAMILY</span>
-                <h3 style="font-family: 'Cormorant Garamond'; font-size: 2rem; margin: 10px 0;">Portfolio Duplex</h3>
-                <p>Full-cycle acquisition and management, overseeing renovations and strengthening property systems.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="invest" class="form-container">
-        <div style="max-width: 800px; margin: 0 auto;">
-            <h2 style="font-family: 'Cormorant Garamond'; font-size: 2.5rem; margin-bottom: 10px;">Investor Portal</h2>
-            <p style="color: var(--gold); margin-bottom: 30px; letter-spacing: 1px;">JOIN THE PRIVATE OFFERING LIST</p>
-            
-            <form action="https://formspree.io/f/YOUR_ID_HERE" method="POST">
-                <input type="text" name="name" placeholder="Full Name" required>
-                <input type="email" name="email" placeholder="Email Address" required>
-                <select name="status">
-                    <option value="Accredited">Accredited Investor</option>
-                    <option value="Non-Accredited">Non-Accredited</option>
-                </select>
-                <textarea name="message" placeholder="Message / Areas of Interest" rows="4"></textarea>
-                <button type="submit" class="submit-btn">Submit Inquiry</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2026 SAFEGUARD ENVIRONMENTS. ALL RIGHTS RESERVED.</p>
-    </footer>
-
-</body>
-</html>
+                <p>Safeguard Environments is an investment and operating firm focused on acquiring and improving small businesses and real estate assets. We take a hands-on approach to ownership by prioritizing operational discipline, financial transparency, and long-term sustainability across every
